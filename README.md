@@ -32,15 +32,12 @@
 打开命令行工具（CMD 或 PowerShell），进入该文件夹路径，依次运行以下命令：
 
 ```bash
-# 1. 切换为国内阿里镜像源（加速 Electron 依赖下载，防止卡死）
-npm config set electron_builder_binaries_mirror [https://npmmirror.com/mirrors/electron-builder-binaries/](https://npmmirror.com/mirrors/electron-builder-binaries/)
-npm config set registry [https://registry.npmmirror.com](https://registry.npmmirror.com)
 
-# 2. 安装项目基础依赖
+# 1. 安装项目基础依赖
 npm install
 
-# 3. 补齐本地打包开发工具
+# 2. 补齐本地打包开发工具
 npm install electron-builder --save-dev
 
-# 4. 执行一键打包
+# 3. 执行一键打包
 npm run build
